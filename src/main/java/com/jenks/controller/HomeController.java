@@ -26,4 +26,11 @@ public class HomeController {
         return "about";
     }
 
+    @GetMapping("/view")
+    public String view(Model model){
+model.addAttribute("View", "This is view page");
+
+        return "view";
+    }
+
 }
